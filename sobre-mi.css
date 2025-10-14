@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(146, 137, 245);
+}
+
+/*SELECTORES*/
+/*
+ES LA FORMA EN LA QUE BUSCAMOS ELEMENTOS HTML
+SELECTOR POR NOMBRE
+body{
+
+
+selector por id
+
+#image-profile {
+
+
+selector por clase
+
+.list{
+
+
+
+*/
+
+#image-profile {
+    border-radius: 50%;
+
+}
