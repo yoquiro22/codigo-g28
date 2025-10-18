@@ -1,61 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>!<!--title es el texto q aparece en pestama-->
-</head>
-
-<style>
-    body >* {
-        border: solid 3px green
-    }
-</style>
-
-<body>
-    <H1>PRUEBA</H1>
-    <h2>Titulo 2 </h2>
-    <h3>Titulo 3</h3>
-    <h4>Titulo 4</h4>
-    <h5>Titulo 5</h5>
-    <h6>Titulo 6</h6>
-   <div>
-        <!--parrafo-->
-        <p>equiqueta parrafo</p>
-        <!--parrafo-->
-        <img src="/convDocente-1.fw.png" 
-        width="100"
-        height="50"
-        > <!--src indica url de la imagen,   alt= accesibilidad -->
-        <img src="./encargoDirect22.fw.png" 
-        alt="300"
-        width="100"
-        height="50">
-   </div>
-
-    <!--etiqueta anchor-->
-    <a href="https://www.youtube.com/watch?v=oRZ1WwqRyEU" target="_blank"> <!--target _blank para abrir en una nueva pestaña-->>
-        video sobre ia
-    </a>
-
-    <div>
-            <!--lista ordenada -->
-        <ol>
-            <li>elemento de lista</li>
-            <li> otro elemento de lista</li>
-            <li> ejemplo</li>
-        </ol>
-        <!--lista no ordenada -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Menu de navegación header -->
+    <header>
+      <!-- navegacion -->
+      <nav class="menu">
+        <!-- Logo - enlace -->
+        <div>
+          <img src="./logo.svg" alt="Logo de portafolio" />
+        </div>
         <ul>
-            <li>un order lis</li>
-            <li>lista no ordenada</li>
-            <li>prueba</li>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About me</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
+          <li>
+            <a href="#">Testimonials</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
         </ul>
-    </div>
-
-</body>
+        <!-- Listado de items (home, about) -->
+      </nav>
+    </header>
+    <!-- La seccion principal -->
+    <main>
+      <section class="container">
+        <section>
+          <p class="gretting">Hi I am</p>
+          <p class="full-name">Linder Hassinger</p>
+          <h1 class="title">Senior Software Developer</h1>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
+            nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis
+            tempus pharetra
+          </p>
+          <button class="btn-primary">Hire me</button>
+        </section>
+        <section>
+          <div class="profile">
+            <img
+              src="./istockphoto-877369086-612x612-removebg-preview.png"
+              alt="Foto de Perfil yqr"
+            />
+          </div>
+          <div class="social-media">
+            <a href="#">
+              <img src="./facebook.svg" alt="" width="32" />
+            </a>
+            <a href="#">
+              <img src="./twitter.svg" alt="" width="32" />
+            </a>
+            <a href="#">
+              <img src="./instagram.svg" alt="" width="32" />
+            </a>
+            <a href="#">
+              <img src="./linkedin.svg" alt="" width="32" />
+            </a>
+          </div>
+        </section>
+      </section>
+    </main>
+    <!-- Pie de pagina (footer) -->
+    <footer></footer>
+  </body>
 </html>
-<!--EQTIQUETA DE BLOQUE OCUPA TODO EL ANCHO DE LA PANTALLA
-EQTUIQUETA INLINE = SOLO OCUPA SU TAMAÑO SEGUN REQUIERE
-
--->
