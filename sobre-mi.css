@@ -1,28 +1,28 @@
 body {
-    background-color: rgb(146, 137, 245);
+  background-color: #38f29b;
 }
 
-/*SELECTORES*/
+/* SELECTORES */
 /*
-ES LA FORMA EN LA QUE BUSCAMOS ELEMENTOS HTML
-SELECTOR POR NOMBRE
-body{
+Es la forma en la que buscamos elementos de HTML
 
+selector por nombre
+body {
+}
 
 selector por id
-
 #image-profile {
+}
 
-
-selector por clase
-
-.list{
-
-
-
+selector por class
+.list {
+}
 */
-
 #image-profile {
-    border-radius: 50%;
+  border-radius: 50%;
+}
 
+.img-square {
+  width: 200px;
+  height: 200px;
 }

@@ -54,11 +54,19 @@ main {
 
 .container {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   padding: 32px;
   justify-content: center;
   align-items: center;
   gap: 25px;
+}
+
+.container-reverse {
+  flex-direction: column-reverse;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .profile {
@@ -83,6 +91,7 @@ main {
   display: flex;
   gap: 15px;
   justify-content: center;
+  width: 250px;
 }
 
 .gretting {
@@ -115,6 +124,77 @@ main {
   border-radius: 5px;
 }
 
+.text-2xl {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.progress-container > progress {
+  width: 100%;
+  border-radius: 6px;
+  height: 12px;
+}
+
+.progress-container > progress::-webkit-progress-bar {
+  background-color: #edecec;
+  border-radius: 6px;
+}
+
+.progress-container > progress::-webkit-progress-value {
+  background-color: #fd6f00;
+  border-radius: 6px;
+}
+
+.grid-projects {
+  display: grid;
+  gap: 50px;
+}
+
+.card {
+  color: #fff;
+}
+
+.card-images {
+  background-color: #ffebdb;
+  border-radius: 6px;
+  position: relative;
+  width: 445px;
+  height: 489px;
+  text-align: right;
+}
+
+.card-images > div > img {
+  width: 274px;
+}
+
+.card-images > div > img:first-child {
+  position: absolute;
+  bottom: -3px;
+  right: 115px;
+}
+
+.card-images > div > img:last-child {
+  padding-right: 40px;
+  height: 489px;
+  object-fit: cover;
+}
+
+.card-body {
+  margin-top: 30px;
+}
+
+.card-body > p {
+  color: #fd6f00;
+  margin-bottom: 15px;
+}
+
 /* Crear una condicion para aplicar estilos en desktop */
 /* @media son funciones de CSS que permiten modificar los estilos
 en base a una medida */
@@ -132,17 +212,55 @@ en base a una medida */
     gap: 40px;
   }
 
+  main {
+    max-width: 1400px;
+    margin: auto;
+  }
+
   .container {
+    /* cambiar la orientación a horizontal */
     flex-direction: row;
+    /*
+    propiedad: justify-content: manipula los elementos en el eje x (horizontal)
+    valor: space-between: acomoda los elementos de extremo a extremo
+    |---------------------|
+    | 1                 2 |
+    | 1        2        3 |
+    |---------------------|
+    */
+    /* justify-content: space-between; */
+    /* Definir el ancho maximo de un elemento
+    60% de la pantalla
+    Ejemplo:
+    monitor: 1000px
+    max-width: 600px
+     */
+    /* max-width: 60%; */
+    /* el margin auto sirve para poder centrar el contenido horizontal
+    solomanete si hemos manipulado el ancho del element */
+    /* margin: auto; */
+  }
+
+  .container > section:first-child {
+    flex-grow: 1;
+  }
+
+  .container > section:last-child {
+    flex-grow: 1;
   }
 
   .title {
-    font-size: 72px;
-    width: 20ch;
+    font-size: 62px;
+    width: 13ch;
   }
 
   .description {
     width: 50ch;
     margin-top: 30px;
+  }
+
+  .grid-projects {
+    /* 3 elementos filas */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
